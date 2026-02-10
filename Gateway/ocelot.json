@@ -1,0 +1,176 @@
+{
+  "Routes": [
+    {
+      "AddClaimsToRequest": {},
+      "AddHeadersToRequest": {},
+      "AddQueriesToRequest": {},
+      "ChangeDownstreamPathTemplate": {},
+      "DangerousAcceptAnyServerCertificateValidator": false,
+      "DelegatingHandlers": [],
+      "DownstreamHeaderTransform": {},
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5050
+        }
+      ],
+      "DownstreamHttpMethod": null,
+      "DownstreamPathTemplate": "/api/authentication/{url}",
+      "FileCacheOptions": null,
+      "Priority": 1,
+      "RequestIdKey": null,
+      "RouteClaimsRequirement": {},
+      "RouteIsCaseSensitive": false,
+      "SecurityOptions": {
+        "IPAllowedList": [],
+        "IPBlockedList": [],
+        "ExcludeAllowedFromBlocked": false
+      },
+      "UpstreamHeaderTemplates": {},
+      "UpstreamHeaderTransform": {},
+      "UpstreamHost": null,
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post",
+        "Put",
+        "Delete"
+      ],
+      "UpstreamPathTemplate": "/api/authentication/{url}",
+      "AuthenticationOptions": null,
+      "CacheOptions": null,
+      "DownstreamHttpVersionPolicy": null,
+      "DownstreamHttpVersion": null,
+      "DownstreamScheme": "http",
+      "HttpHandlerOptions": null,
+      "Key": null,
+      "LoadBalancerOptions": null,
+      "Metadata": null,
+      "QoSOptions": null,
+      "RateLimitOptions": null,
+      "ServiceName": null,
+      "ServiceNamespace": null,
+      "Timeout": null
+    },
+    {
+      "AddClaimsToRequest": {},
+      "AddHeadersToRequest": {
+        "AccountId": "Claims[AccountId] > value > |"
+      },
+      "AddQueriesToRequest": {},
+      "ChangeDownstreamPathTemplate": {},
+      "DangerousAcceptAnyServerCertificateValidator": false,
+      "DelegatingHandlers": [],
+      "DownstreamHeaderTransform": {},
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2715
+        }
+      ],
+      "DownstreamHttpMethod": null,
+      "DownstreamPathTemplate": "/api/general/{url}",
+      "FileCacheOptions": null,
+      "Priority": 1,
+      "RequestIdKey": null,
+      "RouteClaimsRequirement": {},
+      "RouteIsCaseSensitive": false,
+      "SecurityOptions": {
+        "IPAllowedList": [],
+        "IPBlockedList": [],
+        "ExcludeAllowedFromBlocked": false
+      },
+      "UpstreamHeaderTemplates": {},
+      "UpstreamHeaderTransform": {},
+      "UpstreamHost": null,
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post",
+        "Put",
+        "Delete"
+      ],
+      "UpstreamPathTemplate": "/api/general/{url}",
+      "AuthenticationOptions": {
+        "AllowedScopes": [],
+        "AllowAnonymous": null,
+        "AuthenticationProviderKey": "Bearer",
+        "AuthenticationProviderKeys": null,
+        "HasScheme": true,
+        "HasScope": false
+      },
+      "CacheOptions": null,
+      "DownstreamHttpVersionPolicy": null,
+      "DownstreamHttpVersion": null,
+      "DownstreamScheme": "http",
+      "HttpHandlerOptions": null,
+      "Key": null,
+      "LoadBalancerOptions": null,
+      "Metadata": null,
+      "QoSOptions": null,
+      "RateLimitOptions": null,
+      "ServiceName": null,
+      "ServiceNamespace": null,
+      "Timeout": null
+    }
+  ],
+  "DynamicRoutes": [],
+  "Aggregates": [],
+  "GlobalConfiguration": {
+    "AuthenticationOptions": {
+      "RouteKeys": null,
+      "AllowedScopes": null,
+      "AllowAnonymous": null,
+      "AuthenticationProviderKey": null,
+      "AuthenticationProviderKeys": null,
+      "HasScheme": false,
+      "HasScope": false
+    },
+    "BaseUrl": null,
+    "CacheOptions": null,
+    "DownstreamHeaderTransform": {},
+    "DownstreamHttpVersion": null,
+    "DownstreamHttpVersionPolicy": null,
+    "DownstreamScheme": null,
+    "HttpHandlerOptions": {
+      "RouteKeys": null,
+      "AllowAutoRedirect": null,
+      "MaxConnectionsPerServer": null,
+      "PooledConnectionLifetimeSeconds": null,
+      "UseCookieContainer": null,
+      "UseProxy": null,
+      "UseTracing": null
+    },
+    "LoadBalancerOptions": null,
+    "Metadata": null,
+    "MetadataOptions": {
+      "CurrentCulture": "en-US",
+      "NumberStyle": "Any",
+      "Separators": [
+        ","
+      ],
+      "StringSplitOption": "None",
+      "TrimChars": [
+        " "
+      ]
+    },
+    "QoSOptions": null,
+    "RateLimitOptions": null,
+    "RequestIdKey": null,
+    "SecurityOptions": {
+      "IPAllowedList": [],
+      "IPBlockedList": [],
+      "ExcludeAllowedFromBlocked": false
+    },
+    "ServiceDiscoveryProvider": {
+      "Scheme": null,
+      "Host": null,
+      "Port": 0,
+      "Type": null,
+      "Token": null,
+      "ConfigurationKey": null,
+      "PollingInterval": 0,
+      "Namespace": null
+    },
+    "Timeout": null,
+    "UpstreamHeaderTransform": {}
+  }
+}
